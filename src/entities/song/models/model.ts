@@ -4,3 +4,8 @@ export type Song = {
   fullTitle: string;
   artistIds: Array<string>;
 };
+
+export type AddSongForm = {
+  title: string;
+  artist: string;
+};

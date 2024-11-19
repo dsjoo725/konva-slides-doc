@@ -3,11 +3,11 @@ import { useQuery } from "@tanstack/react-query";
 
 import { songApi } from "../api/api.mock";
 
-const SongQueryKeys = createQueryKeys("song", {
+export const SongQueryKeys = createQueryKeys("song", {
   songs: ["songs"],
 });
 
-export const useGetSongs = () => {
+export const useGetSongsQuery = () => {
   return useQuery({
     queryKey: SongQueryKeys.songs.queryKey,
     queryFn: async () => await songApi.getSongs(),

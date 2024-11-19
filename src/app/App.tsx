@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import HomePage from "@/pages/home";
 import SongPage from "@/pages/song";
+import SongIdPage from "@/pages/song/[id]";
 
 const App = () => {
   const queryClient = new QueryClient({
@@ -18,8 +18,8 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
           <Route path="/song" element={<SongPage />} />
+          <Route path="/song/:id" element={<SongIdPage />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

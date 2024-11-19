@@ -1,10 +1,9 @@
-import { AddSongForm } from "@/features/add-song";
-import { SongList } from "@/widgets/song-list/ui/song-list";
+import { AddSongForm, SongCardList } from "@/features/song-manager";
 
 const SongPage = () => {
   return (
     <div>
-      <SongList />
+      <SongCardList />
       <AddSongForm />
     </div>
   );

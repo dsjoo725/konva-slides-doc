@@ -1,20 +1,27 @@
-import { useAddSong } from "@/entities/song";
 import React, { useState } from "react";
+import { useAddSongMutation } from "@/entities/song";
 
-export const AddSongForm: React.FC = () => {
-  const { mutate } = useAddSong();
+const AddSongForm = () => {
+  const { mutate } = useAddSongMutation();
   const [title, setTitle] = useState("");
   const [artist, setArtist] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    mutate({ title, artistIds: [artist], fullTitle: "asdasd", id: "sadas" });
-    setTitle("");
-    setArtist("");
+    mutate(
+      { title, artist },
+      {
+        onSuccess: () => {
+          setTitle("");
+          setArtist("");
+        },
+      }
+    );
   };
 
   return (
     <form onSubmit={handleSubmit}>
+      <h2>Add a New Song</h2>
       <input
         type="text"
         placeholder="Song Title"
@@ -31,3 +38,5 @@ export const AddSongForm: React.FC = () => {
     </form>
   );
 };
+
+export default AddSongForm;

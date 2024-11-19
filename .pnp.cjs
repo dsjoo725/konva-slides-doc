@@ -43,6 +43,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:6.28.0"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"],\
           ["typescript-eslint", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:8.14.0"],\
+          ["uuid", "npm:11.0.3"],\
           ["vite", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:5.4.11"],\
           ["vite-tsconfig-paths", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:5.1.2"]\
         ],\
@@ -2574,6 +2575,7 @@ const RAW_RUNTIME_STATE =
           ["react-router-dom", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:6.28.0"],\
           ["typescript", "patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"],\
           ["typescript-eslint", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:8.14.0"],\
+          ["uuid", "npm:11.0.3"],\
           ["vite", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:5.4.11"],\
           ["vite-tsconfig-paths", "virtual:02fa6859117665774d4d3c70bf3ff04ecb6a263d44c04952ccc318349f1e2a363ca0701155d456390e13fff1ace72b6b9961055b1b05ddba2ff326a1ddefbdf4#npm:5.1.2"]\
         ],\
@@ -3592,6 +3594,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["uri-js", "npm:4.4.1"],\
           ["punycode", "npm:2.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["uuid", [\
+      ["npm:11.0.3", {\
+        "packageLocation": "../../Users/dsjoo/AppData/Local/Yarn/Berry/cache/uuid-npm-11.0.3-abcb5b16c0-10c0.zip/node_modules/uuid/",\
+        "packageDependencies": [\
+          ["uuid", "npm:11.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\

@@ -1,2 +1,4 @@
-export { useGetSongs } from "./models/use-query";
-export { useAddSong } from "./models/use-mutation";
+export { useGetSongsQuery } from "./models/use-query";
+export { useAddSongMutation } from "./models/use-mutation";
+
+export type { Song } from "./models/model";

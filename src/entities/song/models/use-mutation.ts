@@ -1,12 +1,17 @@
-import { useMutation } from "@tanstack/react-query";
-import { Song } from "./model";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { AddSongForm } from "./model";
 import { songApi } from "../api/api.mock";
+import { SongQueryKeys } from "./use-query";
 
-export const useAddSong = () => {
+export const useAddSongMutation = () => {
+  const queryClient = useQueryClient();
+
   return useMutation({
-    mutationFn: async (song: Song) => {
-      const data = await songApi.addSongs(song);
-      return data;
+    mutationFn: async (song: AddSongForm) => {
+      await songApi.addSongs(song);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: SongQueryKeys.songs.queryKey });
     },
   });
 };
